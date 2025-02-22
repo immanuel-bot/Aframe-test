@@ -1,0 +1,12 @@
+<!-- chair -->
+<a-entity position="-1 0 0" rotation="0 90 0">
+  <!-- chair legs -->
+  <a-box scale="0.3 2.3 0.3" position="0 1.1 -3" color="#a66300"></a-box>
+  <a-box scale= "0.3 2.3 0.3" position="1 1.1 -3" color="#a66300"></a-box>
+  <a-box scale="0.3 1 0.3" position="0 0.5 -4" color="#a66300"></a-box>
+  <a-box scale="0.3 1 0.3" position="1 0.5 -4" color="#a66300"></a-box>
+  <!-- chair bars -->
+  <a-box scale="1.2 0.3 0.2" position="0.5 1.9 -3" color="#a66300"></a-box>
+  <!-- chair top -->
+  <a-box scale="1.5 0.1 1.5" position="0.5 1.05 -3.5" color="#a66300"></a-box>
+</a-entity>

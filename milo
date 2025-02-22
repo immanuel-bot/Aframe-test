@@ -1,0 +1,5 @@
+<!-- milo tin -->
+      <a-entity position="0 0.4 0">
+        <a-cylinder position="0 1 -3" height="0.55" radius="0.25" src="#milo" rotation="0 -90 0"></a-cylinder>
+        <a-cylinder position="0 1.3 -3" height="0.05" radius="0.26" color="green" rotation="0 -90 0"></a-cylinder>
+      </a-entity>

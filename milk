@@ -1,0 +1,5 @@
+<!-- milk tin -->
+      <a-entity position="0 0.4 0">
+        <a-cylinder position="0 1 -3" height="0.3" radius="0.12" src="#milk" rotation="0 -90 0"></a-cylinder>
+        <a-cylinder position="0 1.14 -3" height="0.03" radius="0.125" color="silver" rotation="0 -90 0"></a-cylinder>
+      </a-entity>

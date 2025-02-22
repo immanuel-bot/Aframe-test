@@ -1,28 +1,39 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="./Scripts/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
-        <a-assets>
-            <img id="sky" src="sky.jpg">
+        <a-assets shadow="autoUpdate: true">
+            <img id="sky" src="./images/sky.jpg">
+            <img id="milo" src="/images/MILO Banner.jpg">
+            <img id="milk" src="/images/farm-milk-banner.jpg">
+            <img id="wall" src="/images/wall.jpg">
         </a-assets>
 
         <!-- sky -->
         <a-sky src="#sky"></a-sky>
+        <a-light type="point" color="white" position="0 5 0"></a-light>
+        
 
-
-        <!-- table -->
-        <a-entity position="-0.5 0 1">
-            <!-- table legs -->
-            <a-box scale="0.3 1 0.3" position="0 0.5 -3" color="brown"></a-box>
-            <a-box scale="0.3 1 0.3" position="1 0.5 -3" color="brown"></a-box>
-            <a-box scale="0.3 1 0.3" position="0 0.5 -4" color="brown"></a-box>
-            <a-box scale="0.3 1 0.3" position="1 0.5 -4" color="brown"></a-box>
-            <!-- table top -->
-            <a-box scale="1.5 0.1 1.5" position="0.5 1.05 -3.5" color="brown"></a-box>
+         <!-- table -->
+         <a-entity position="-0.5 0 1">
+          <!-- table legs -->
+          <a-box scale="0.3 1 0.3" position="0 0.5 -3" color="#5c3a08"></a-box>
+          <a-box scale="0.3 1 0.3" position="1 0.5 -3" color="#5c3a08"></a-box>
+          <a-box scale="0.3 1 0.3" position="0 0.5 -4" color="#5c3a08"></a-box>
+          <a-box scale="0.3 1 0.3" position="1 0.5 -4" color="#5c3a08"></a-box>
+          <!-- table top -->
+          <a-box scale="1.5 0.1 1.5" position="0.5 1.05 -3.5" color="#5c3a08"></a-box>
         </a-entity>
 
+
+      <!-- cup -->
+      <a-entity>
+        <a-cone side="double" open-ended="true" shadow="true" position="0 1.3 -2" color="blue" radius-bottom="0.09" radius-top="0.15" height="0.3"></a-cone>
+        <a-circle position="0 1.435 -2" rotation="-90 0 0" radius="0.14" color="#704503"></a-circle>
+        <a-torus rotation="0 0 -95" position="0.1 1.3 -2" color="red" arc="170" radius="0.1" radius-tubular="0.01"></a-torus>
+      </a-entity>
 
         <!-- ground -->
          <a-box color="#323143" scale="100 1 100" position="1 -2 -5"></a-box>
